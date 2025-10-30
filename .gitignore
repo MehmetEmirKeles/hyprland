@@ -1,17 +1,13 @@
-# Genellikle atlanan klasörler
 *.log
 *.swp
 *.bak
 *~
 
-# Fuzzel/Rofi gibi uygulamaların cache/geçici dosyaları
 /fuzzel/cache
 /rofi/cache
 
-# Waybar veya Kitty'de oluşabilecek geçici dosyalar
 /waybar/*.tmp
 /kitty/*.log
 
-# Hassas/Kişisel dosyalar (varsa)
 *.key
 .env
