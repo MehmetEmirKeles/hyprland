@@ -1,0 +1,91 @@
+/* Genel Waybar Arkaplanı ve Görünümü */
+#waybar {
+    background-color: rgba(26, 26, 26, 0.85); /* Hafif şeffaf koyu renk */
+    color: #ffffff;
+    /* KESİN ÇÖZÜM: Kendi kurulu Nerd Font'unuzun adı kullanıldı. */
+    font-family: "RecMonoLinear Nerd Font Propo", "Font Awesome 6 Free", monospace; 
+    font-size: 14px;
+    border-radius: 10px; 
+    padding: 0px 5px; 
+    margin: 5px 5px 0px 5px; 
+}
+
+/* Tüm Modüller İçin Ortak Stil */
+#waybar .modules-container {
+    padding: 0 10px;
+}
+
+/* Modüllerin Kendisi (Buttonlar) */
+#waybar widget > * {
+    padding: 0 10px; 
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+/* Modüller Üzerine Gelince (Hover) */
+#waybar widget > *:hover {
+    background-color: rgba(100, 100, 100, 0.4); 
+}
+
+/* Çalışma Alanları (Workspaces) */
+#workspaces {
+    background-color: #1E1E2E; 
+    border-radius: 8px;
+    padding: 0 5px;
+}
+
+/* Çalışma Alanı Buttonları */
+#workspaces button {
+    padding: 0 10px;
+    color: #CDD6F4; 
+}
+
+/* Aktif Çalışma Alanı */
+#workspaces button.active {
+    background-color: #585b70;
+    color: #A6E3A1; 
+    border-radius: 8px;
+}
+
+/* Odaklanılan Pencere Başlığı (Ortadaki alan) */
+#window {
+    font-style: italic;
+    font-weight: bold;
+    color: #A6E3A1;
+}
+
+/* İpuçları (Tooltip) */
+tooltip {
+    background-color: #313244;
+    color: #CDD6F4;
+    border-radius: 8px;
+}
+
+/* Özel İkonlar ve Diğer Modüller için Stil */
+#custom-launcher,
+#pulseaudio,
+#pulseaudio-microphone,
+#network,
+#backlight,
+#battery,
+#cpu,
+#memory,
+#clock 
+{
+    padding: 0 12px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+#clock {
+    color: #BAC2DE; 
+    font-weight: bold;
+}
+
+/* Güç Butonu için daha dikkat çekici renk */
+#custom-power {
+    color: #F38BA8; 
+    border-radius: 0 8px 8px 0; 
+    margin-right: 0;
+    padding-right: 15px;
+}
+

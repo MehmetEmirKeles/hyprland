@@ -1,0 +1,142 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 35,
+
+    "modules-left": [
+        "custom/launcher",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "pulseaudio#microphone",
+        "pulseaudio",
+        "backlight",
+        "network",
+        "battery",
+        "cpu",
+        "memory",
+        "clock",
+        "custom/power"
+    ],
+
+    // =================================================================
+    // MODÜL AYARLARI
+    // =================================================================
+
+    // Uygulama Başlatıcı
+    "custom/launcher": {
+        "format": "",
+        "on-click": "wofi --show drun",
+        "tooltip": false
+    },
+
+    // Hyprland Çalışma Alanları
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "active": "",
+            "default": ""
+        }
+    },
+
+    // ----------------------------------------------------
+    // SAAT ve TAKVİM MODÜLÜ
+    // ----------------------------------------------------
+    "clock": {
+        "format": " {:%H:%M:%S}",
+        "tooltip": true,
+        "tooltip-format": "<big>{:%A, %d %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "on-click": "yad --calendar"
+    },
+
+    // Ses Ayarı
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "on-click": "pavucontrol",
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
+        "format-icons": {
+            "default": ["", ""]
+        }
+    },
+
+    // Mikrofon
+    "pulseaudio#microphone": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "on-click": "pavucontrol -t 3",
+        "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "format-icons": {
+            "default": ""
+        }
+    },
+
+    // Parlaklık
+    "backlight": {
+        "format": " {percent}%",
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-"
+    },
+
+    // Ağ Durumu
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": " ETH",
+        "format-disconnected": " NO NET",
+        "tooltip-format-wifi": "Sinyal: {signalStrength}% ({ifname})",
+        "on-click": "nm-connection-editor"
+    },
+
+    // ----------------------------------------------------
+    // Pil
+    // ----------------------------------------------------
+    "battery": {
+        "bat": "BAT0", 
+        "adapter": "AC",
+        "interval": 30,
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-full": " Full",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+    ],
+    "tooltip": true,
+    "on-click": "~/.config/hypr/scripts/powermode.sh"
+}
+    },
+
+    // CPU
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": true,
+        "on-click": "kitty -e btop"
+    },
+
+    // Bellek
+    "memory": {
+        "format": " {percentage}%",
+        "tooltip": true
+    },
+
+    // Güç Menüsü
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": "Power Menu",
+        "on-click": "~/.config/hypr/scripts/powermenu.sh"
+    }
+}
+

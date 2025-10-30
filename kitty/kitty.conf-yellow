@@ -1,0 +1,35 @@
+background #FDF6E3
+foreground #657B83
+cursor #657B83
+
+selection_background #000000
+selection_foreground #444444
+
+
+color0 #000000
+color8 #444444
+color1 #FF0077
+color9 #FF66AA
+color2 #00FF00
+color10 #77FF77
+color3 #FFFF00
+color11 #FFFFCC
+color4 #00FFFF
+color12 #66FFFF
+color5 #FF00FF
+color13 #FF66FF
+color6 #00AAFF
+color14 #66CCFF
+color7 #CCCCCC
+color15 #FFFFFF
+
+background_opacity 0.3
+
+# 2. Arka Plan Bulanıklığı (Blur)
+# Blur'un yarıçapını (radius) ayarlar. Genellikle 5 ile 10 arası idealdir.
+# Değeri yükselttikçe bulanıklık artar.
+blur_mous 8
+
+# 3. Blur Efektini Etkinleştirme
+# Bulanıklık efektini etkinleştirir (Varsayılan olarak kapalı olabilir).
+blur_mous_enabled yes

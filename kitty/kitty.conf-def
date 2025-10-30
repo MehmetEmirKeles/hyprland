@@ -1,0 +1,31 @@
+# Font Ayarları
+font_family      Fira Code Nerd Font
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+font_size        11.0
+
+# Tema (Siyah arka plan, beyaz yazı)
+background       #1e1e1e
+foreground       #ffffff
+
+# Kısayollar (Örnek: Font boyutunu artırma)
+map ctrl+shift+plus change_font_size all +2.0
+map ctrl+shift+minus change_font_size all -2.0
+
+# =========================================================
+# BLUR VE ŞEFFAFLIK AYARLARI
+# =========================================================
+
+# 1. Arka Plan Şeffaflığı (0.0 = Tam Şeffaf, 1.0 = Tam Opak/Kapalı)
+# Waybar'ınızla uyumlu olması için 0.9 (yani %90 opak) iyi bir değerdir.
+background_opacity 0.4
+
+# 2. Arka Plan Bulanıklığı (Blur)
+# Blur'un yarıçapını (radius) ayarlar. Genellikle 5 ile 10 arası idealdir.
+# Değeri yükselttikçe bulanıklık artar.
+blur_mous 8
+
+# 3. Blur Efektini Etkinleştirme
+# Bulanıklık efektini etkinleştirir (Varsayılan olarak kapalı olabilir).
+blur_mous_enabled yes

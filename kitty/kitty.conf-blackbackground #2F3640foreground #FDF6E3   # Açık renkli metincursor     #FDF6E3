@@ -1,0 +1,41 @@
+background #002B36 
+foreground #839496
+cursor     #839496
+
+selection_background #333333
+selection_foreground #FFFFFF
+
+# ANSI Renk Paleti (Her renk ayrı satırda)
+color0 #333333
+color1 #CC0000
+color2 #00CC00
+color3 #CCCC00
+color4 #0000CC
+color5 #CC00CC
+color6 #00CCCC
+color7 #CCCCCC
+color8 #555555
+color9 #FF3333
+color10 #33FF33
+color11 #FFFF33
+color12 #3333FF
+color13 #FF33FF
+color14 #33FFFF
+color15 #FFFFFF
+
+# =========================================================
+# BLUR VE ŞEFFAFLIK AYARLARI
+# =========================================================
+
+# 1. Arka Plan Şeffaflığı (0.0 = Tam Şeffaf, 1.0 = Tam Opak/Kapalı)
+# Waybar'ınızla uyumlu olması için 0.9 (yani %90 opak) iyi bir değerdir.
+background_opacity 0.9
+
+# 2. Arka Plan Bulanıklığı (Blur)
+# Blur'un yarıçapını (radius) ayarlar. Genellikle 5 ile 10 arası idealdir.
+# Değeri yükselttikçe bulanıklık artar.
+blur_mous 8
+
+# 3. Blur Efektini Etkinleştirme
+# Bulanıklık efektini etkinleştirir (Varsayılan olarak kapalı olabilir).
+blur_mous_enabled yes
