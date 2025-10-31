@@ -1,5 +1,5 @@
 # hyprland
-the hyprland I use
+The Hyprland I use
 
 # WALLPAPERS&WAYBAR&KİTTY
 
