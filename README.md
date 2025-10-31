@@ -1,31 +1,28 @@
 # hyprland
 the hyprland I use
 
-### WALLPAPERS
+# WALLPAPERS&WAYBAR&KİTTY
 
-# DEFAULT 
+## DEFAULT 
 ![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-40-46.png?raw=true)
 
-# RED 
+## RED 
 ![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-41-09.png?raw=true)
 
-# BLUE
+## BLUE
 ![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-41-47.png?raw=true)
 
-# Black
+## Black
 ![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-41-58.png?raw=true)
 
-# YELLOW
+## YELLOW
 ![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-42-15.png?raw=true)
 
-# PİNK 
+## PİNK 
 ![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-41-24.png?raw=true)
 
+## EKSTRA BTONS
+![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-38-41.png?raw=true)
 
-
-
-
-
-
-# SCREEN LOCK
+## SCREEN LOCK
 ![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-38-31.png?raw=true)
