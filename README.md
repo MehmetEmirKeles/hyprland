@@ -1,6 +1,9 @@
 # hyprland
 The Hyprland I use
 
+Detailed video is on my YouTube channel : https://www.youtube.com/watch?v=6hgGO57c6Js
+                                          https://www.youtube.com/watch?v=_mWJCB792To
+
 # WALLPAPERS&WAYBAR&KİTTY
 
 ## DEFAULT 
@@ -23,6 +26,7 @@ The Hyprland I use
 
 ## EKSTRA BTONS
 ![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-38-41.png?raw=true)
+![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-56-27.png?raw=true)
 
 ## SCREEN LOCK
 ![imagine_alt](https://github.com/MehmetEmirKeles/hyprland/blob/main/2025-10-31_03-38-31.png?raw=true)
