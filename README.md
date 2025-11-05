@@ -5,7 +5,7 @@ Detailed video is on my YouTube channel : https://www.youtube.com/watch?v=6hgGO5
                                           https://www.youtube.com/watch?v=_mWJCB792To
 if you want to run it as a script go 
 
-clone https://github.com/MehmetEmirKeles/hyprland.git
+git clone [https://github.com/MehmetEmirKeles/hyprland.git](https://github.com/MehmetEmirKeles/hyprland.git)
 
 # WALLPAPERS&WAYBAR&KİTTY
 
