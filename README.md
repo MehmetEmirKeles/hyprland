@@ -11,6 +11,25 @@ if you want to run it as a script go
 git clone https://github.com/MehmetEmirKeles/hyprland.git
 ```
 
+## Requirements
+
+sudo pacman -S --needed \
+hyprland \
+waybar \
+kitty \
+gtklock \
+swww \
+wofi \
+dunst \
+pipewire \
+wireplumber \
+polkit-kde-agent \
+xdg-desktop-portal-hyprland \
+ttf-font-awesome \
+jq \
+noto-fonts
+
+
 # WALLPAPERS&WAYBAR&KİTTY
 
 ## DEFAULT 
