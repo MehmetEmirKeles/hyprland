@@ -1,0 +1,16 @@
+# ~/.config/gtklock/config.toml
+
+# ... (Diğer input, clock, user_info ayarları kalsın) ...
+
+# =========================================================
+# GÖRSEL AYARLAR (YALNIZCA GTKLOCK İÇİN)
+# =========================================================
+[image]
+# Mutlak yolunuz:
+path = "/home/emir/Pictures/Wallpapers/lock.png" 
+# Fill yerine Fit veya Stretch deneyin
+scaling_mode = "Fit" 
+
+[style]
+# CSS ve css_file satırlarını tamamen silin veya yorum satırı yapın.
+font_name = "JetBrains Mono 12"

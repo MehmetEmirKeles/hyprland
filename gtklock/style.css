@@ -1,0 +1,6 @@
+/* Şifre giriş kutusunu yarı şeffaf gri yapar */
+#input {
+    background-color: rgba(26, 26, 26, 0.7); 
+    border-radius: 10px;
+    padding: 10px;
+}

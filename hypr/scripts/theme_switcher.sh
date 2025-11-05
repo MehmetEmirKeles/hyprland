@@ -1,11 +1,9 @@
 
-# Ana Dizinler (Değişkenler doğrudan atanır)
 LOGO_DIR"$HOME/.config/logos"
 WAYBAR_DIR="$HOME/.config/waybar"
 KITTY_DIR="$HOME/.config/kitty"
 FISH_DIR="$HOME/.config/fish"
 
-# Tema Listesi
 LOGO_DIR="$HOME/.config/logos"
 THEMES=("def" "red" "pink" "blue" "black" "yellow")
 
@@ -34,11 +32,10 @@ WAYBAR_SOURCE_FILE="$WAYBAR_DIR/style.css$THEME_EXT"
 if cp -f "$WAYBAR_SOURCE_FILE" "$WAYBAR_DIR/style.css"; then
     echo "Waybar güncellendi: $WAYBAR_SOURCE_FILE" >> "$LOG_FILE"
 else
-    # Bu satırı görürsek, dosyanın gerçekten orada olmadığını anlarız.
+
     echo "HATA: Waybar dosyası bulunamadı VEYA KOPYALANAMADI: $WAYBAR_SOURCE_FILE" >> "$LOG_FILE"
 fi
 
-# Kitty Teması (Find ile arama)
 KITTY_SOURCE_FILE=$(find "$KITTY_DIR" -maxdepth 1 -type f -name "kitty.conf$THEME_EXT*" -print -quit)
 
 if [ -f "$KITTY_SOURCE_FILE" ]; then
@@ -51,7 +48,6 @@ else
     echo "HATA: Kitty dosyası bulunamadı: $KITTY_DIR/kitty.conf$THEME_EXT" >> "$LOG_FILE"
 fi
 
-# Fish Teması/Logosu (Sadece cp, zaten çalıştığı için)
 FISH_SOURCE_FILE="$FISH_DIR/config.fish$THEME_EXT"
 if cp -f "$FISH_SOURCE_FILE" "$FISH_DIR/config.fish"; then
     echo "Fish güncellendi." >> "$LOG_FILE"
@@ -60,7 +56,6 @@ else
 fi
 
 
-# 3. Waybar'ı GÜVENİLİR ŞEKİLDE yeniden başlat
 killall -q waybar
 sleep 0.3
 waybar & 
@@ -71,15 +66,11 @@ echo "Başarıyla $CHOSEN_THEME temasına geçildi." >> "$LOG_FILE"
 
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
 
-# 4. Wallpaper'ı Uygula (UZANTI ESNEKLİĞİ EKLENDİ)
-
-# Aranacak dosya adı kökü (uzantısız)
 FILE_ROOT="$WALLPAPER_DIR/$CHOSEN_THEME"
 FILE_ROOT_UPPER="$WALLPAPER_DIR/${CHOSEN_THEME^}" # Black teması için (eğer gerekirse)
 
-# FIND komutu ile uzantıdan bağımsız dosyayı bul
 if [ "$CHOSEN_THEME" == "black" ]; then
-    # Black için özel olarak hem küçük hem büyük harf B ile ara (uzantı fark etmeksizin)
+
     FINAL_WALLPAPER=$(find "$WALLPAPER_DIR" -maxdepth 1 -type f -name "[Bb]lack.*" -print -quit)
 else
     # Diğer temalar için (pink, red, blue)
@@ -97,5 +88,5 @@ if [ -f "$FINAL_WALLPAPER" ]; then
     echo "Wallpaper güncellendi." >> "$LOG_FILE"
 else
     echo "HATA: Wallpaper dosyası bulunamadı: $FINAL_WALLPAPER" >> "$LOG_FILE"
-    # Eğer bu hata gelirse, black.png ve Black.png'den birini sildiyseniz bile, dosya ismini hala bulamıyor demektir.
+
 fi
