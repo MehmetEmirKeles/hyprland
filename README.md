@@ -3,9 +3,11 @@ The Hyprland I use
 
 Detailed video is on my YouTube channel : https://www.youtube.com/watch?v=6hgGO57c6Js
                                           https://www.youtube.com/watch?v=_mWJCB792To
+
+
 if you want to run it as a script go 
 
-git clone [https://github.com/MehmetEmirKeles/hyprland.git](https://github.com/MehmetEmirKeles/hyprland.git)
+https://github.com/MehmetEmirKeles/hyprland.git
 
 # WALLPAPERS&WAYBAR&KİTTY
 
